@@ -1,0 +1,153 @@
+/* External CSS  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+ 
+}
+
+
+header {
+    background:#92D050;
+    color:red;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.topnav {
+    background-color:black;
+    overflow: hidden;
+}
+
+.topnav a {
+    float:left;
+    color:beige;
+    text-align:center;
+    padding:14px 16px;
+    font-size:19px;
+}
+
+.topnav a:hover {
+    background-color: antiquewhite;
+    color:black;
+}
+
+.topnav a.active {
+    background-color:black;
+    color:yellow;
+}
+
+.container {
+    display: flex;
+}
+footer {
+        
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        background: black;
+        color: white;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; 
+}
+
+.table-container {
+    flex: 1; /* fill remaining space */
+}
+
+.image-row {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+
+.image-row {
+    display: flex; 
+    height: auto;
+    width: 100%;
+}
+
+
+.image-row div {
+    flex: 1;
+    text-align: center; /* Center align content within the div */
+}
+
+.image-row img {
+    width: 100%; 
+    display: block; 
+}
+
+.image-row p {
+    margin-top: 5px; 
+    font-size: 14px; /* Adjust font size */
+}
+.image-row {
+    display: flex;
+    justify-content: space-between; /* Distribute the space evenly between the images */
+    align-items: center; /* Align items vertically in the center */
+}
+
+#menu-item {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 20px;
+}
+.menu-item {
+    color: green;
+    padding: 10px 20px; 
+    border: 2px solid green; 
+    border-radius: 5px; 
+    transition: all 0.3s ease; 
+}
+
+.menu-item:hover {
+    background-color: green; 
+    color: #fff; 
+}
+.container {
+    perspective: 10000px;
+}
+button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add and subtract button styles*/
+.increase-btn, .decrease-btn {
+    background-color: #4CAF50; 
+    color: white; 
+    border-radius: 3px; /*button border rounded corners */
+}
+
+
+.increase-btn:hover, .decrease-btn:hover {
+    background-color:green; 
+}
+
+

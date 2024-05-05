@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/contact.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+</head>
+<body>
+    <header>
+        <img src="../img/University_of_Houston_Logo_red-700x666.png" alt="logo">
+        <h1>Cafeteria at UH Sugar Land</h1>
+    </header>
+    <div class="topnav"> 
+        <a href="biography.html">Biography</a>
+        <a href="index.html" >Home</a>
+        <a href="menu.html" ">Menu</a>
+        <a href="about.html" "">About</a>
+        <a href="contact.html"  class="active">Contact</a>
+    </div>
+  
+    <div class = "container">
+        <form action = "/sumbit_form" method = "Post">
+            <label for = 'name'>Name:</label>
+            <input type = 'text' id = 'name' name = 'name' required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+            <label for = 'email'>email:</label>
+            <input type = 'email' id="email" name = 'email' required>
+            <label for = 'message'>Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type = 'submit'>Sumbit</button>
+        </form>
+    </div>
+  
+   
+  
+
+   
+    <footer>
+        <p>&copy; 2024 UH Sugar Land. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:wchen38@cougarnet.uh.edu">wchen38@cougarnet.uh.edu</a>.</p>
+    </footer>
+
+    <script src="../JS/menu.js"></script>
+</body>
+</html>

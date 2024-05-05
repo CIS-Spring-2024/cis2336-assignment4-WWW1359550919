@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/menu.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+</head>
+<body>
+    <header>
+        <img src="../img/University_of_Houston_Logo_red-700x666.png" alt="logo">
+        <h1>Cafeteria at UH Sugar Land</h1>
+    </header>
+    <div class="topnav"> 
+        <a href="biography.html">Biography</a>
+        <a href="index.html" >Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <div class="container" id="menu-container">
+        <div id="menu-item">
+            <a href="#" class="menu-item" data-item="breakfast">Breakfast</a>
+            <a href="#" class="menu-item" data-item="lunch">Lunch</a>
+            <a href="#" class="menu-item" data-item="dinner">Dinner</a>
+        </div>
+    </div>
+    <div id="menu-content" class="container">
+        <div class="image-row">
+            <div class="menu-item-container">
+                <!-- Menu content will be dynamically updated here -->
+            </div>
+        </div>
+    </div>
+    <a href="http://localhost:8002/order">
+        <img src="../Img/cart.png" id="img" alt="Shopping Cart">
+    </a>
+   
+    <img src="../Img/here-we-go-resized.jpg" width="100%">
+    <footer>
+        <p>&copy; 2024 UH Sugar Land. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:wchen38@cougarnet.uh.edu">wchen38@cougarnet.uh.edu</a>.</p>
+    </footer>
+
+    <script src="../JS/menu.js"></script>
+</body>
+</html>

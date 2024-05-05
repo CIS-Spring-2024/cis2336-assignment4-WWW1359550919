@@ -1,0 +1,140 @@
+/* External CSS  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: rgb(248, 244, 244);
+    padding: 20px;
+}
+
+header {
+    background:#92D050;
+    color:red;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    color:black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background:black;
+    color: #fff;
+}
+
+aside {
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+a:hover {
+    color: #333;
+}
+
+.topnav{
+    background-color:black;
+    overflow: hidden;
+}
+.topnav a{
+    float:left;
+    color:beige;
+    text-align:center;
+    padding:14px 16px;
+    font-size:19px;
+}
+.topnav a:hover{
+    background-color: antiquewhite;
+    color:black;
+}
+.topnav a.active{
+    background-color:black;
+    color:yellow;
+}
+
+.responsive-image {
+    max-width: 100%; 
+    height: auto; /* Maintain aspect ratio */
+}
+.table-container {
+    overflow-x: auto; /* Add horizontal scroll for small screens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black; 
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    color:black; /* Text color */
+    font-weight: bold; /* Bold text */
+    
+}
+
+
+/*  styles for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    td {
+        display: block; /* Display table cells as block elements */
+        width: 100%; 
+        text-align: left; /* Align text to the left */
+}}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-with-text {
+    border: 2px solid black; 
+    padding: 10px; 
+    width: 45%; 
+}
+
+.image-with-text img {
+    width: 100%; 
+    height: auto; 
+}
+
+.text {
+    text-align: center; 
+}
+
+.image-description {
+    font-weight: bold; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjust height as needed */
+}
+
+.container img {
+    max-width: 100%;
+    max-height: 100%;
+}

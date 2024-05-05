@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/order.css" />
+</head>
+<body>
+    <header>
+        <img src="../img/University_of_Houston_Logo_red-700x666.png" alt="logo">
+        <h1>Cafeteria at UH Sugar Land</h1>
+    </header>
+
+    <div class="topnav">
+        <a href="../html/biography.html">Biography</a>
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <h2>Shopping List</h2>
+    <div class="container">
+        <form id="update-form" action="http://localhost:8002/orderTotal" method="POST">
+            <% for (let i = 1; i <= 9; i++) { %>
+                <div>
+                    <label for="item<%= i %>">Item:</label>
+                    <input type="text" id="item<%= i %>" name="item<%= i %>" value="<%= i %>" readonly>
+                    <label for="name<%= i %>">Name:</label>
+                    <input type="text" id="name<%= i %>" name="name<%= i %>" value="<%= items[i-1].name %>" readonly>
+                    <label for="price<%= i %>">Price:</label>
+                    <input type="text" id="price<%= i %>" name="price<%= i %>" value="<%= items[i-1].price %>" readonly>
+                    <label for="quantity<%= i %>">Quantity:</label>
+                    <input type="number" id="quantity<%= i %>" name="quantity<%= i %>" min="0" max="10" value="0">
+                </div>
+            <% } %>
+            <span id="quantityError" style="color: red;"></span>
+            <div>
+                <button type="submit">Submit the Order</button>
+            </div>
+        </form>
+    </div>
+    <div id="total-cost"></div>
+
+    
+    
+</body>
+</html>

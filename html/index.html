@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/index.css" />
+</head>
+<body>
+    <header >
+        <img src="../img/University_of_Houston_Logo_red-700x666.png" alt="logo" >
+        <h1>Cafeteria at UH Sugar Land</h1>
+    </header>
+    
+    <div class="topnav"> 
+        <a href="biography.html">Biography</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <img src="../img/visiting-uh-sugar-land.jpg" alt="visiting-uh-sugar-land" class="responsive-image">
+    <div class="table-container">
+        <table>
+            <tr>
+                <td class="color1">Health</td>
+                <td class="color2">Delicious</td>
+                <td class="color3">Nutritional</td>
+                <td class="color4">Comfortable</td>
+            </tr>
+        </table>
+    </div>
+    
+    <h2>Special Dish</h2>
+    <table class = "special">
+        <tr>
+            <td><img src="../img/food1.jpg" alt="Image 1"></td>
+            <td><img src="../img/food2.jpg" alt="Image 2"></td>
+        </tr>
+        <tr>
+            <td>Kung Pao Chicken</td>
+            <td>Beef and Kale Stir-Fry</td>
+        </tr>
+    </table>
+    <table class="menu_img">
+        <tr>
+            <td><img src="../img/pizza.jpeg" alt="Image 3" width="300px"></td>
+            <td><img src="../img/salads.jpg" alt="Image 4" width="300px"></td>
+            <td><img src="../img/sandwich.jpg" alt="Image 5" width="300px"></td>
+        </tr>
+        <tr>
+            <td>pizza</td>
+            <td>vegetable salads</td>
+            <td>sandwich</td>
+        </tr>
+       
+    </table>
+    <section id="review">
+    <h2>Customer review</h2>
+        <details>
+            <summary>More about Cafeteria</summary>
+            <p>There's something special about the Cafeteria. Beautiful environment, delicious food, we love it.</p>
+        </details>
+        <p></p>
+        <figure>
+            <div class="container">
+                <img src="../img/customer1.jpg" alt="Custom1" class="customer1">
+                <img src="../img/customer2.jpg" alt="Custom2" class="customer2">
+            </div
+        </figure>
+    </section>
+
+    <h2>Leave a Review</h2>
+
+    <form action="/submit_review" method="post">
+        <label for="review_text">Your Review:</label><br>
+        <textarea id="review_text" name="review_text" rows="4" cols="50"></textarea><br><br>
+    
+        <input type="submit" value="Submit Review">
+    </form>
+    <footer>
+        <p>&copy; 2024 UH Sugar Land. All rights reserved.</p>
+        <p>Contact us at <a href="wchen38@cougarnet.uh.edu">wchen38@cougarnet.uh.edu</a>.</p>
+    </footer>
+    <aside>
+        <h3> Food is the most basic necessity of the people.</h3>
+    </aside>
+    <script script src="../JS/menu.js" >
+       
+        window.onload = function() {
+        alert("Cafeteria at UH Sugar Land");
+        };
+    </script>
+</body>
+</html>
